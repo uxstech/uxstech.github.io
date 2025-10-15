@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Privacy Policy - UxS Technologies</title>
+	<!-- Tailwind -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- Alpine -->
+	<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/skilline.css" />
+	<!-- Poppins font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" type="image/svg" href="img/uxs_logo.svg" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+	html {
+		scroll-behavior: smooth;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+</style>
+
+<body class="bg-white antialiased">
+	<!-- navbar -->
+	<div x-data="{ open: false }" class="w-full mt-4 text-gray-700 bg-white">
+		<div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
+			<div class="flex flex-row items-center justify-between py-3">
+				<div class="relative md:mt-8">
+					<a href="index.html">
+						<img class="h-10" src="img/uxs_logo.svg" alt="UxS Technologies">
+					</a>
+				</div>
+				<button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+						<path x-show="!open" fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+							clip-rule="evenodd"></path>
+						<path x-show="open" fill-rule="evenodd"
+							d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</button>
+			</div>
+			<nav :class="{ 'transform md:transform-none': !open, 'h-full': open }"
+				class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transperant rounded-lg ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="index.html#about">About</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transperant rounded-lg ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="index.html#tech">Technologies</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transperant rounded-lg ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="index.html#services">Services</a>
+				<a class="px-4 py-2 mt-2 font-medium text-sm text-gray-800 bg-transperant rounded-lg ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+					href="index.html#contactus">Contact us</a>
+			</nav>
+		</div>
+	</div>
+
+	<!-- Privacy Policy Content -->
+	<div class="container px-4 lg:px-8 mx-auto max-w-screen-xl text-gray-700 overflow-x-hidden py-12">
+		<div data-aos="flip-down" class="text-center max-w-screen-md mx-auto mb-12">
+			<h1 class="text-3xl font-bold">Privacy Policy</h1>
+			<p class="text-gray-700 font-medium text-sm mt-4">Last updated: October 15, 2023</p>
+		</div>
+
+		<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">1. Information We Collect</h2>
+				<p class="text-gray-700 font-medium text-sm mb-4">
+					At UxS Technologies, we collect information that you provide directly to us when you:
+				</p>
+				<ul class="list-disc pl-6 text-gray-700 font-medium text-sm mb-4">
+					<li class="mb-2">Contact us through our website forms</li>
+					<li class="mb-2">Request information about our services</li>
+					<li class="mb-2">Subscribe to our newsletter</li>
+					<li class="mb-2">Apply for a position with our company</li>
+				</ul>
+				<p class="text-gray-700 font-medium text-sm">
+					The types of information we may collect include your name, email address, phone number, company name, and any other information you choose to provide.
+				</p>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">2. How We Use Your Information</h2>
+				<p class="text-gray-700 font-medium text-sm mb-4">
+					We use the information we collect to:
+				</p>
+				<ul class="list-disc pl-6 text-gray-700 font-medium text-sm mb-4">
+					<li class="mb-2">Provide, maintain, and improve our services</li>
+					<li class="mb-2">Respond to your comments, questions, and requests</li>
+					<li class="mb-2">Send you technical notices, updates, and support messages</li>
+					<li class="mb-2">Communicate with you about products, services, and events</li>
+					<li class="mb-2">Monitor and analyze trends, usage, and activities</li>
+				</ul>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">3. Information Sharing</h2>
+				<p class="text-gray-700 font-medium text-sm mb-4">
+					We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties except in the following circumstances:
+				</p>
+				<ul class="list-disc pl-6 text-gray-700 font-medium text-sm mb-4">
+					<li class="mb-2">With your consent</li>
+					<li class="mb-2">To comply with legal obligations</li>
+					<li class="mb-2">To protect and defend our rights and property</li>
+					<li class="mb-2">With service providers who assist in our operations</li>
+				</ul>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">4. Data Security</h2>
+				<p class="text-gray-700 font-medium text-sm">
+					We implement appropriate technical and organizational security measures to protect your personal information against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+				</p>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">5. Your Rights</h2>
+				<p class="text-gray-700 font-medium text-sm mb-4">
+					Depending on your location, you may have certain rights regarding your personal information, including:
+				</p>
+				<ul class="list-disc pl-6 text-gray-700 font-medium text-sm mb-4">
+					<li class="mb-2">The right to access and receive a copy of your personal information</li>
+					<li class="mb-2">The right to rectify or update your personal information</li>
+					<li class="mb-2">The right to erase your personal information</li>
+					<li class="mb-2">The right to restrict or object to our processing of your personal information</li>
+				</ul>
+				<p class="text-gray-700 font-medium text-sm">
+					To exercise these rights, please contact us using the information provided in the "Contact Us" section.
+				</p>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">6. Cookies and Tracking Technologies</h2>
+				<p class="text-gray-700 font-medium text-sm">
+					We may use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
+				</p>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">7. Changes to This Privacy Policy</h2>
+				<p class="text-gray-700 font-medium text-sm">
+					We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
+				</p>
+			</div>
+
+			<div class="mb-8">
+				<h2 class="text-xl font-bold text-gray-800 mb-4">8. Contact Us</h2>
+				<p class="text-gray-700 font-medium text-sm">
+					If you have any questions about this Privacy Policy, please contact us:
+				</p>
+				<ul class="list-none pl-0 text-gray-700 font-medium text-sm mt-2">
+					<li class="mb-1">By email: uxstechnologies@gmail.com</li>
+					<li class="mb-1">By visiting our contact page: <a href="index.html#contactus" class="text-blue-500 hover:text-blue-700">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="mt-12 bg-white">
+		<div class="max-w-lg mx-auto">
+			<div class="flex py-4 justify-center text-gray-700 font-medium text-sm items-center px-20 sm:px-36">
+				<div class="relative">
+					<a href="index.html">
+						<img class="h-6 px-4" src="img/uxs_logo.svg" alt="UxS Technologies">
+					</a>
+				</div>
+				<span class="border-l border-gray-500 text-xs pl-5  font-semibold">UxS Technologies</span>
+			</div>
+			<div class="text-center text-gray-700 font-medium text-xs pb-4">
+				<div class="tracking-wide mb-2">
+					<p>&copy; 2023 Designed & developed by uxstechnologies</p>
+				</div>
+				<div class="tracking-wide">
+					<a href="privacy-policy.html" class="text-blue-500 hover:text-blue-700">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- AOS init -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
